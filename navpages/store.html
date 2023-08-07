@@ -8,7 +8,6 @@
     <title>Document</title>
 </head>
 <body>
-  <button id="addBtn">Add Gift Card</button>  
     <section class="cards contact" id="content">
         <h2 class="title">Gift Cards</h2>
         <div class="content">
@@ -31,14 +30,26 @@
               </div>
             </div>
             <div class="column">
-              <div class="card">..</div>
+              <div class="card"></div>
             </div>
             <div class="column">
-              <div class="card">..</div>
+              <div class="card"></div>
             </div>
           </div>
     </section>
+    <button id="addBtn">Add Gift Card</button> 
+    <form >
+      <h1>Add Gift Card</h1>
+      <label for="Title">Title:</label>
+      <input type="text" id="Title" name="Title"><br>
+      <label for="img">Select image:</label>
+      <input type="file" id="img" name="img" accept="image/*"> <br>
+      <label for="price">price:</label>
+      <input type="text" id="price" name="price"><br>
     
+
+    </form>
+  <script src="/js/store.js"></script>
 </body>
 </html>
 
