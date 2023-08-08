@@ -30,8 +30,10 @@ function store(){
     }else{
         localStorage.setItem('name', name.value);
         localStorage.setItem('pw', pw.value);
-        alert('Your account has been created');
+        alert('Your account has been created', window.location.href = "http://127.0.0.1:5501/navpages/login.html"
+        );
     }
+    
 }
 
 //checking
