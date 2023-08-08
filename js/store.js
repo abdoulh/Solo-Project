@@ -1,4 +1,3 @@
-
 function makeAccount() {
     var balance = 0;
     return {
@@ -22,16 +21,16 @@ function makeAccount() {
     var balanceElement = document.getElementById("balance");
     var depositButton = document.getElementById("deposit-btn");
 
-    // Display initial balance
-    updateBalance();
+    
+    updateBalance(); // Display initial balance
 
-    // Update the balance display
-    function updateBalance() {
+   
+    function updateBalance() {  // Update the balance display
         balanceElement.textContent = "Balance: $" + account.checkBalance(); // textContent  === string or null
     }
 
     // Event listener for the deposit button
-    depositButton.addEventListener("click", () => { 
+    depositButton.addEventListener("click", () => {    // add methode addEventListener 
         var amount = parseFloat(prompt("Enter deposit amount:"));
 
         if (!isNaN(amount) && amount > 0) {
