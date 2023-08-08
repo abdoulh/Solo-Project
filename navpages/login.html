@@ -8,20 +8,27 @@
     <title>Login</title>
 </head>
 <body>
-    <form action="">
-        <div class="container">
-          <h1>Login</h1>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-      
-          <button type="submit" class="login">Login</button>
+  <div class="login">
+    <form name='form-login'>
+
+        <h1>SIGN IN</h1>
+
+        <label for="userName">Email</label>
+        <input type="email" id="userName" placeholder="Username" required>
+
+        <label for="userPw">Password</label>
+        <input type="password" id= "userPw" placeholder="Password" required>
+
+        <div id="remember">
+            <input type="checkbox" value="lsRememberMe" id="rememberMe"
+                   style="display: inline-block;">
+            <label>Remember me</label>
         </div>
-      </form>
-    
+
+        <input id= "login_btn" type="submit" value="Login" onclick="check()">
+
+    </form>
+</div>
+<script src="/js/loginRegister.js"></script>
 </body>
 </html>
