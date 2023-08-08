@@ -2,9 +2,9 @@ function store(){
 
     var name = document.getElementById('name');
     var pw = document.getElementById('pw');
-    var lowerCaseLetters = /[a-z]/g;
-    var upperCaseLetters = /[A-Z]/g;
-    var numbers = /[0-9]/g;
+    var lowerCaseLetters = /[a-z]/g; // regular expression
+    var upperCaseLetters = /[A-Z]/g;// regular expression
+    var numbers = /[0-9]/g;// regular expression
 
     if(name.value.length == 0){
         alert('Please fill in email');
@@ -28,15 +28,13 @@ function store(){
         alert('please add 1 lovercase letter');
 
     }else{
-        localStorage.setItem('name', name.value);
-        localStorage.setItem('pw', pw.value);
-        alert('Your account has been created', window.location.href = "http://127.0.0.1:5501/navpages/login.html"
-        );
+        localStorage.setItem('name', name.value); // The only difference: data stored in localStorage has no expiration time,
+        localStorage.setItem('pw', pw.value);     //  when you close the browser. local storge clear
+        alert("register successfully")
     }
-    
 }
 
-//checking
+//checking login
 function check(){
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('pw');
@@ -46,7 +44,7 @@ function check(){
     var userRemember = document.getElementById("rememberMe");
 
     if(userName.value == storedName && userPw.value == storedPw){
-       (window.location.href = "http://127.0.0.1:5501/navpages/store.html") 
+       alert(window.location.href = "http://127.0.0.1:5501/navpages/store.html") 
     }else{
         alert('Error on login');
     }
