@@ -18,7 +18,7 @@ function store(){
     }else if(pw.value.length > 8){
         alert('Max of 8');
 
-    }else if(!pw.value.match(numbers)){
+    }else if(!pw.value.match(numbers)){ // match  method retrieves the result of matching a string 
         alert('please add 1 number');
 
     }else if(!pw.value.match(upperCaseLetters)){

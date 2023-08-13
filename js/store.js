@@ -31,7 +31,7 @@ function makeAccount() {
 
     // Event listener for the deposit button
     depositButton.addEventListener("click", () => {    // add methode addEventListener 
-        var amount = parseFloat(prompt("Enter deposit amount:"));
+        var amount = parseFloat(prompt("Enter deposit amount:")); // string argument and returns a floating point number.
 
         if (!isNaN(amount) && amount > 0) {
             var message = account.deposit(amount);

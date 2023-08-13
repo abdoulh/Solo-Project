@@ -1,6 +1,7 @@
-
+body{
+  background-color: #eeeeee;;
+}
 header {
-  background-color: #f76b8a;
   width: 100%;
   height: 50px;
   text-align: right;
